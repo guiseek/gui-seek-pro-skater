@@ -28,7 +28,7 @@ export class MusicPlaylist {
   }
 
   prev() {
-    if (this.#current > 1) {
+    if (this.#current >= 1) {
       this.#current--
     } else {
       this.#current = this.items.length - 1

@@ -34,6 +34,8 @@ export class Music {
       this.dom.title.textContent = this.player.playlist.name
     })
 
+    this.player.audio.addEventListener('ended', this.#next)
+
     this.dom.play.addEventListener('click', () => {
       if (!this.player.audio.src) {
         this.player.audio.src = this.player.playlist.path
@@ -48,16 +50,20 @@ export class Music {
       }
     })
 
-    this.dom.prev.addEventListener('click', () => {
-      this.player.playlist.prev()
-      this.player.audio.src = this.player.playlist.path
-      this.player.audio.play()
-    })
+    this.dom.prev.addEventListener('click', this.#prev)
 
-    this.dom.prev.addEventListener('click', () => {
-      this.player.playlist.next()
-      this.player.audio.src = this.player.playlist.path
-      this.player.audio.play()
-    })
+    this.dom.next.addEventListener('click', this.#next)
+  }
+
+  #prev = () => {
+    this.player.playlist.prev()
+    this.player.audio.src = this.player.playlist.path
+    this.player.audio.play()
+  }
+
+  #next = () => {
+    this.player.playlist.next()
+    this.player.audio.src = this.player.playlist.path
+    this.player.audio.play()
   }
 }

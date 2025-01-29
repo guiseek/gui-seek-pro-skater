@@ -34,6 +34,10 @@ export class Skatepark {
       outLedgeAngleIronLeft: new Body({mass: 0}),
       outLedgeAngleIronRight: new Body({mass: 0}),
       blockLedge: new Body({mass: 0}),
+      downRail: new Body({mass: 0}),
+      lowRail: new Body({mass: 0}),
+      railStraight: new Body({mass: 0}),
+      
     }
 
     this.#prepareCollisionBody('ground')
@@ -54,6 +58,9 @@ export class Skatepark {
     this.#prepareCollisionBody('quarter1')
     this.#prepareCollisionBody('quarter2')
     this.#prepareCollisionBody('quarterBig')
+    this.#prepareCollisionBody('downRail')
+    this.#prepareCollisionBody('lowRail')
+    this.#prepareCollisionBody('railStraight')
   }
 
   #prepareCollisionBody<K extends keyof SkateparkCollision>(key: K) {

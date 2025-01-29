@@ -7,38 +7,32 @@
   },
   {
     "name": "shove-it",
-    "action": "z",
-    "forces": [],
+    "action": "a",
+    "forces": [{"y": 0}],
     "rotation": {"y": -2.4}
   },
   {
     "name": "pop shove-it",
-    "action": "c",
-    "forces": [],
+    "action": "d",
+    "forces": [{"y": 0}],
     "rotation": {"y": 2.4}
   },
   {
     "name": "flip",
-    "action": "a",
-    "forces": [{"y": 20}],
+    "action": "q",
+    "forces": [{"y": 0}],
     "rotation": {"z": -4.5}
   },
   {
     "name": "heelflip",
-    "action": "d",
-    "forces": [{"y": 20}],
+    "action": "e",
+    "forces": [{"y": 0}],
     "rotation": {"z": 4.5}
   },
   {
     "name": "kickfip",
     "action": "x",
-    "forces": [{"y": 60}],
+    "forces": [{"y": 0}],
     "rotation": {"z": 3.2, "y": -3.2}
-  },
-  {
-    "name": "hardflip",
-    "action": "q",
-    "forces": [{"y": 20}],
-    "rotation": {"y": 3, "x": -4}
   }
 ]

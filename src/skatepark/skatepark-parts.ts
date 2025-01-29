@@ -65,13 +65,13 @@ export class SkateparkParts extends Parts<SkateparkPart> {
 
   blockLedge: Mesh
 
-  // lowRail: Mesh
+  lowRail: Mesh
 
-  // downRail: Mesh
+  downRail: Mesh
 
   // cornerRail: Mesh
 
-  // railStraight: Mesh
+  railStraight: Mesh
 
   constructor(object: Object3D) {
     super(object)
@@ -96,9 +96,9 @@ export class SkateparkParts extends Parts<SkateparkPart> {
     this.quarter1 = this.getPart('QUARTER_1')
     this.quarter2 = this.getPart('QUARTER_2')
     this.quarterBig = this.getPart('QUARTER_BIG')
-    // this.lowRail = this.getPart('LOWRAIL')
-    // this.downRail = this.getPart('DOWNRAIL')
+    this.lowRail = this.getPart('LOWRAIL')
+    this.downRail = this.getPart('DOWNRAIL')
     // this.cornerRail = this.getPart('CORNERRAIL')
-    // this.railStraight = this.getPart('RAIL_STRAIGHT')
+    this.railStraight = this.getPart('RAIL_STRAIGHT')
   }
 }
