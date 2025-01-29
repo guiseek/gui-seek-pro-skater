@@ -1,0 +1,22 @@
+{
+  "name": "gui-seek-pro-skater",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/three": "^0.172.0",
+    "cannon-es-debugger": "^1.0.0",
+    "sass": "^1.83.4",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.5"
+  },
+  "dependencies": {
+    "cannon-es": "^0.20.0",
+    "three": "^0.172.0"
+  }
+}
